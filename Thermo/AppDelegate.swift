@@ -2,26 +2,25 @@
 //  AppDelegate.swift
 //  Thermo
 //
-//  Created by Sato Naoya on 10/19/14.
-//  Copyright (c) 2014 Sato Naoya. All rights reserved.
+//  Created by Naoya Sato on 10/19/14.
+//  Copyright (c) 2014 Naoya Sato. All rights reserved.
 //
 
 import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
-
+    let statusBar = StatusBar()
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
-
+    
+    func launchActivityMonitor(sender: NSMenuItem) {
+        NSWorkspace.sharedWorkspace().launchApplication("/Applications/Utilities/Activity Monitor.app")
+    }
 
 }
 

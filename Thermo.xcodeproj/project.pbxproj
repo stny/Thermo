@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391F881919F5B030002D4E9C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F881819F5B030002D4E9C /* Util.swift */; };
+		394138FD19F3E63400D34813 /* SMCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394138FC19F3E63400D34813 /* SMCManager.swift */; };
+		3941390219F3F1CF00D34813 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 394138FF19F3F1CF00D34813 /* LICENSE */; };
+		3941390319F3F1CF00D34813 /* smc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3941390019F3F1CF00D34813 /* smc.c */; };
+		3941390819F54EE000D34813 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3941390719F54EE000D34813 /* StatusBar.swift */; };
 		39DC4DBF19F2DA1B0071DD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC4DBE19F2DA1B0071DD25 /* AppDelegate.swift */; };
 		39DC4DC119F2DA1B0071DD25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DC4DC019F2DA1B0071DD25 /* Images.xcassets */; };
 		39DC4DC419F2DA1B0071DD25 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DC4DC219F2DA1B0071DD25 /* MainMenu.xib */; };
@@ -24,6 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391F881819F5B030002D4E9C /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		394138FC19F3E63400D34813 /* SMCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCManager.swift; sourceTree = "<group>"; };
+		394138FF19F3F1CF00D34813 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3941390019F3F1CF00D34813 /* smc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smc.c; sourceTree = "<group>"; };
+		3941390119F3F1CF00D34813 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		3941390419F3F26D00D34813 /* smc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smc-Bridging-Header.h"; sourceTree = "<group>"; };
+		3941390719F54EE000D34813 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		39DC4DB919F2DA1B0071DD25 /* Thermo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DC4DBD19F2DA1B0071DD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39DC4DBE19F2DA1B0071DD25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		394138FE19F3F1CF00D34813 /* smc */ = {
+			isa = PBXGroup;
+			children = (
+				394138FF19F3F1CF00D34813 /* LICENSE */,
+				3941390019F3F1CF00D34813 /* smc.c */,
+				3941390119F3F1CF00D34813 /* smc.h */,
+			);
+			path = smc;
+			sourceTree = "<group>";
+		};
 		39DC4DB019F2DA1B0071DD25 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +95,12 @@
 		39DC4DBB19F2DA1B0071DD25 /* Thermo */ = {
 			isa = PBXGroup;
 			children = (
+				3941390419F3F26D00D34813 /* smc-Bridging-Header.h */,
 				39DC4DBE19F2DA1B0071DD25 /* AppDelegate.swift */,
+				3941390719F54EE000D34813 /* StatusBar.swift */,
+				391F881819F5B030002D4E9C /* Util.swift */,
+				394138FE19F3F1CF00D34813 /* smc */,
+				394138FC19F3E63400D34813 /* SMCManager.swift */,
 				39DC4DC019F2DA1B0071DD25 /* Images.xcassets */,
 				39DC4DC219F2DA1B0071DD25 /* MainMenu.xib */,
 				39DC4DBC19F2DA1B0071DD25 /* Supporting Files */,
@@ -151,7 +178,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Sato Naoya";
+				ORGANIZATIONNAME = "Naoya Sato";
 				TargetAttributes = {
 					39DC4DB819F2DA1B0071DD25 = {
 						CreatedOnToolsVersion = 6.1;
@@ -186,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3941390219F3F1CF00D34813 /* LICENSE in Resources */,
 				39DC4DC119F2DA1B0071DD25 /* Images.xcassets in Resources */,
 				39DC4DC419F2DA1B0071DD25 /* MainMenu.xib in Resources */,
 			);
@@ -205,7 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3941390319F3F1CF00D34813 /* smc.c in Sources */,
 				39DC4DBF19F2DA1B0071DD25 /* AppDelegate.swift in Sources */,
+				394138FD19F3E63400D34813 /* SMCManager.swift in Sources */,
+				391F881919F5B030002D4E9C /* Util.swift in Sources */,
+				3941390819F54EE000D34813 /* StatusBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +356,7 @@
 				INFOPLIST_FILE = Thermo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/smc-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -335,6 +368,7 @@
 				INFOPLIST_FILE = Thermo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/smc-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -393,6 +427,7 @@
 				39DC4DD519F2DA1B0071DD25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39DC4DD619F2DA1B0071DD25 /* Build configuration list for PBXNativeTarget "ThermoTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +436,7 @@
 				39DC4DD819F2DA1B0071DD25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

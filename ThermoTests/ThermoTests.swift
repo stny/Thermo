@@ -2,8 +2,8 @@
 //  ThermoTests.swift
 //  ThermoTests
 //
-//  Created by Sato Naoya on 10/19/14.
-//  Copyright (c) 2014 Sato Naoya. All rights reserved.
+//  Created by Naoya Sato on 10/19/14.
+//  Copyright (c) 2014 Naoya Sato. All rights reserved.
 //
 
 import Cocoa
